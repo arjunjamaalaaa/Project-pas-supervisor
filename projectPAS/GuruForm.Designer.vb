@@ -29,6 +29,7 @@ Partial Class GuruForm
         Me.Button2 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -90,11 +91,21 @@ Partial Class GuruForm
         Me.Button1.Text = "Hasil Supervisi"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(420, 122)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 8
+        Me.Button3.Text = "Kembali"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'GuruForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(537, 450)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button2)
@@ -117,4 +128,5 @@ Partial Class GuruForm
     Friend WithEvents Button2 As Windows.Forms.Button
     Friend WithEvents DataGridView1 As Windows.Forms.DataGridView
     Friend WithEvents Button1 As Windows.Forms.Button
+    Friend WithEvents Button3 As Windows.Forms.Button
 End Class

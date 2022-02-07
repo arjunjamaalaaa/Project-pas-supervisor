@@ -39,6 +39,7 @@ Partial Class uploadForm
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AxAcroPDF1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -135,7 +136,7 @@ Partial Class uploadForm
         Me.AxAcroPDF1.Location = New System.Drawing.Point(485, 206)
         Me.AxAcroPDF1.Name = "AxAcroPDF1"
         Me.AxAcroPDF1.OcxState = CType(resources.GetObject("AxAcroPDF1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxAcroPDF1.Size = New System.Drawing.Size(249, 316)
+        Me.AxAcroPDF1.Size = New System.Drawing.Size(303, 337)
         Me.AxAcroPDF1.TabIndex = 10
         '
         'Button2
@@ -174,11 +175,19 @@ Partial Class uploadForm
         Me.Button5.Text = "kembali"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(485, 148)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(64, 20)
+        Me.TextBox4.TabIndex = 15
+        '
         'uploadForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 536)
+        Me.ClientSize = New System.Drawing.Size(800, 583)
+        Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -219,4 +228,5 @@ Partial Class uploadForm
     Friend WithEvents Button3 As Windows.Forms.Button
     Friend WithEvents Button4 As Windows.Forms.Button
     Friend WithEvents Button5 As Windows.Forms.Button
+    Friend WithEvents TextBox4 As Windows.Forms.TextBox
 End Class

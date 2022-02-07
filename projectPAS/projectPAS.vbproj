@@ -95,6 +95,18 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Class1.vb" />
+    <Compile Include="DokumenForm.Designer.vb">
+      <DependentUpon>DokumenForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DokumenForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hasilSupervisi.Designer.vb">
+      <DependentUpon>hasilSupervisi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hasilSupervisi.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="JadwalForm.Designer.vb">
       <DependentUpon>JadwalForm.vb</DependentUpon>
     </Compile>
@@ -141,6 +153,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="supervisiForm.Designer.vb">
+      <DependentUpon>supervisiForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="supervisiForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SupervisorForm.Designer.vb">
       <DependentUpon>SupervisorForm.vb</DependentUpon>
     </Compile>
@@ -158,8 +176,14 @@
     <EmbeddedResource Include="addGuruForm.resx">
       <DependentUpon>addGuruForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DokumenForm.resx">
+      <DependentUpon>DokumenForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GuruForm.resx">
       <DependentUpon>GuruForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hasilSupervisi.resx">
+      <DependentUpon>hasilSupervisi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JadwalForm.resx">
       <DependentUpon>JadwalForm.vb</DependentUpon>
@@ -178,6 +202,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supervisiForm.resx">
+      <DependentUpon>supervisiForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupervisorForm.resx">
+      <DependentUpon>SupervisorForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uploadForm.resx">
       <DependentUpon>uploadForm.vb</DependentUpon>

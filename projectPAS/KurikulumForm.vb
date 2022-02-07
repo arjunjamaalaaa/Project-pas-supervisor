@@ -32,10 +32,39 @@ Public Class KurikulumForm
         nipKuri.Enabled = False
         namaText.Text = RD.Item("nama")
         namaText.Enabled = False
+        Call docsAcc()
+        Call accGuru()
+
+
+    End Sub
+
+    Sub accGuru()
+        Call connection()
+        Dim query As String = "select  c.nama, c.email ,b.mapel, b.embed, b.rpp, b.catatan, b.status from tbl_jadwal as a 
+left join tbl_dokumen as b on a.nip = b.nip
+left join table_teachers as c on a.nip = c.nip
+where b.status = 'lulus'"
+        Dim cmd4 = New SqlCommand(query, CONN)
+        Dim da2 As New SqlDataAdapter
+        da2.SelectCommand = cmd4
+        Dim dt2 = New DataTable
+        dt2.Clear()
+        da2.Fill(dt2)
+        guruDone.DataSource = dt2
     End Sub
 
 
-
+    Sub docsAcc()
+        Call connection()
+        Dim query As String = "select nip, mapel, rpp, embed from tbl_dokumen where status ='lulus'"
+        Dim cmd4 = New SqlCommand(query, CONN)
+        Dim da2 As New SqlDataAdapter
+        da2.SelectCommand = cmd4
+        Dim dt2 = New DataTable
+        dt2.Clear()
+        da2.Fill(dt2)
+        accDokumen.DataSource = dt2
+    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         JadwalForm.Show()

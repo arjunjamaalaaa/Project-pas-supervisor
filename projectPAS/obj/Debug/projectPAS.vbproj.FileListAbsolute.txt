@@ -20,3 +20,7 @@ C:\Users\Arjun\source\repos\projectPAS\projectPAS\obj\Debug\Interop.AcroPDFLib.d
 C:\Users\Arjun\source\repos\projectPAS\projectPAS\obj\Debug\AxInterop.AcroPDFLib.dll
 C:\Users\Arjun\source\repos\projectPAS\projectPAS\obj\Debug\projectPAS.vbproj.ResolveComReference.cache
 C:\Users\Arjun\source\repos\projectPAS\projectPAS\obj\Debug\projectPAS.KepsekForm.resources
+C:\Users\Arjun\source\repos\projectPAS\projectPAS\obj\Debug\projectPAS.hasilSupervisi.resources
+C:\Users\Arjun\source\repos\projectPAS\projectPAS\obj\Debug\projectPAS.SupervisorForm.resources
+C:\Users\Arjun\source\repos\projectPAS\projectPAS\obj\Debug\projectPAS.supervisiForm.resources
+C:\Users\Arjun\source\repos\projectPAS\projectPAS\obj\Debug\projectPAS.DokumenForm.resources

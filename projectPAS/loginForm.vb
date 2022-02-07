@@ -39,14 +39,14 @@ Public Class loginForm
         DA.Fill(DT)
 
         'LOGIC 2'
-        Dim logic2 As String = "select * from table_teachers where nip='" & nipText.Text & "' and password='" & passText.Text & "' and (jabatan1='kurikulum' or jabatan2='kurikulum') and supervisor='yes'"
+        Dim logic2 As String = "select * from table_teachers where nip='" & nipText.Text & "' and password='" & passText.Text & "' and (jabatan1='" & cmbMulti.SelectedItem & "' or jabatan2='kurikulum') and supervisor='yes'"
         Dim cmd2 = New SqlCommand(logic2, CONN)
         Dim da2 = New SqlDataAdapter(cmd2)
         Dim dt2 = New DataTable
         da2.Fill(dt2)
 
         'Logic 3'
-        Dim logic3 As String = "select * from table_teachers where nip='" & nipText.Text & "' and password='" & passText.Text & "' and (jabatan1='" & cmbMulti.SelectedItem & "' or jabatan2='" & cmbMulti.SelectedItem & "') and supervisor='yes'"
+        Dim logic3 As String = "select * from table_teachers where nip='" & nipText.Text & "' and password='" & passText.Text & "' or (jabatan1='" & cmbMulti.SelectedItem & "' or jabatan2='" & cmbMulti.SelectedItem & "') and supervisor='yes'"
         Dim cmd3 = New SqlCommand(logic3, CONN)
         Dim da3 = New SqlDataAdapter(cmd3)
         Dim dt3 = New DataTable
@@ -65,6 +65,10 @@ Public Class loginForm
             Me.Hide()
             MsgBox("anda login sebagai " + cmbMulti.SelectedItem)
         ElseIf (DT.Rows.Count > 0 And cmbMulti.SelectedItem = "kepala sekolah") Then
+            KepsekForm.Show()
+            Me.Hide()
+            MsgBox("anda login sebagai " + cmbMulti.SelectedItem)
+        ElseIf (dt3.Rows.Count > 0 And cmbMulti.SelectedItem = "supervisor") Then
             SupervisorForm.Show()
             Me.Hide()
             MsgBox("anda login sebagai " + cmbMulti.SelectedItem)
